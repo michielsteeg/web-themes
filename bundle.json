@@ -1,7 +1,7 @@
 {
 	"name": "web-themes", 
 	"resources": {
-		"standard": {
+		"default": {
 			"default.glue": {
 				"url": "standard/default.glue"
 			}, 

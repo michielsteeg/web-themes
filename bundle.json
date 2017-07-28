@@ -12,11 +12,11 @@
 				"url": "standard/devices.glue"
 			}
 		},
-		"hifluence.json": {
+		"hifluence": {
 			"type": "bundle",
 			"url": "hifluence.json"
 		},
-		"nabu.json": {
+		"nabu": {
 			"type": "bundle",
 			"url": "nabu.json"
 		}

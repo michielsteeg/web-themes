@@ -1,0 +1,13 @@
+{
+	"name": "hifluence-theme", 
+	"resources": {
+		"basic.json": {
+			"url": "basic.json",
+			"type": "bundle"
+		},
+		"hifluence.json": {
+			"url": "hifluence/bundle.json",
+			"type": "bundle"
+		}
+	}
+}

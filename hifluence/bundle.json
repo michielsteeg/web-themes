@@ -1,0 +1,23 @@
+{
+	"name": "hifluence", 
+	"resources": {
+        "button.gcss": {
+            "url": "button.gcss"
+        },
+        "card.gcss": {
+            "url": "card.gcss"
+        },
+		"form.gcss": {
+			"url": "form.gcss"
+		}, 
+		"header.gcss": {
+			"url": "header.gcss"
+		}, 
+		"main.gcss": {
+			"url": "main.gcss"
+		}, 
+		"variables.glue": {
+			"url": "variables.glue"
+		}
+	}
+}

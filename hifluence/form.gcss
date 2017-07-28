@@ -1,0 +1,26 @@
+.field {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-ms-appearance: none;
+	-o-appearance: none;
+	appearance: none;
+	border: ${border/apply()}; // extract to correct variable
+	border-radius: 0;
+	background: #fff;
+	color: #614d4d;
+	display: block;
+	font-size: 1rem;
+	line-height: 1.4em;
+	min-height: 3rem;
+	padding: .75rem 1.5rem;
+	width: 100%;
+}
+
+
+// TODO : extract to media lambda
+@media (min-width: 40em) {
+	.field {
+		display: inline-block;
+		width: auto;
+	}
+}

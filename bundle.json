@@ -15,6 +15,10 @@
 		"hifluence": {
 			"type": "bundle",
 			"url": "hifluence.json"
+		},
+		"nabu": {
+			"type": "bundle",
+			"url": "nabu.json"
 		}
 	}
 }

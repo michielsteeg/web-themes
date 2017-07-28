@@ -4,7 +4,7 @@
 	-ms-appearance: none;
 	-o-appearance: none;
 	appearance: none;
-	border: ${border/apply()}; // extract to correct variable
+	border: ${border/color}; // extract to correct variable
 	border-radius: 0;
 	background: #fff;
 	color: #614d4d;

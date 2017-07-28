@@ -1,6 +1,6 @@
 .card {
 	background-color: ${background/color/primary};
-	border: ${border/apply()};
+	border: ${border/color};
 	margin: 2rem; // extract to variable
 	width: auto;
 	max-width: 100%;
@@ -24,7 +24,7 @@
 		}
 	}
 	.card_section:not(:last-child) {
-		border-bottom: ${border/apply()};
+		border-bottom: ${border/color};
 	}
 	// Small container
 	&.small {

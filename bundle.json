@@ -1,7 +1,7 @@
 {
 	"name": "web-themes", 
 	"resources": {
-		"default": {
+		"standard": {
 			"default.glue": {
 				"url": "standard/default.glue"
 			}, 
@@ -12,11 +12,11 @@
 				"url": "standard/devices.glue"
 			}
 		},
-		"hifluence": {
+		"hifluence.json": {
 			"type": "bundle",
 			"url": "hifluence.json"
 		},
-		"nabu": {
+		"nabu.json": {
 			"type": "bundle",
 			"url": "nabu.json"
 		}

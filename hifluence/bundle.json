@@ -1,6 +1,9 @@
 {
 	"name": "hifluence", 
 	"resources": {
+		"variables.glue": {
+			"url": "variables.glue"
+		},
 		"button.gcss": {
 			"url": "button.gcss"
 		},
@@ -9,15 +12,12 @@
 		},
 		"form.gcss": {
 			"url": "form.gcss"
-		}, 
+		},
 		"header.gcss": {
 			"url": "header.gcss"
-		}, 
+		},
 		"main.gcss": {
 			"url": "main.gcss"
-		}, 
-		"variables.glue": {
-			"url": "variables.glue"
 		}
 	}
 }

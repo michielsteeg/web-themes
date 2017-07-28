@@ -11,6 +11,10 @@
 			"devices.glue": {
 				"url": "standard/devices.glue"
 			}
+		},
+		"hifluence": {
+			"type": "bundle",
+			"url": "hifluence.json"
 		}
 	}
 }

@@ -9,6 +9,9 @@ font = font + structure(
     ),
     family: structure(
         primary: "'Open Sans', sans-serif"
+    ),
+    size: structure(
+        default: "16px"
     ))
 
 background = background + structure(

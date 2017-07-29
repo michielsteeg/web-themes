@@ -1,8 +1,6 @@
 // PAGE
 
-*,
-*:before,
-*:after {
+*, *:before, *:after {
 	box-sizing: border-box;
 }
 
@@ -11,8 +9,7 @@
 	-webkit-overflow-scrolling: touch;
 }
 
-html,
-body {
+html, body {
 	font-size: ${font/size/default};
 	line-height: calc(${font/size/default} * 1.5);
 	margin: 0;

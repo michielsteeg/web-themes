@@ -2,13 +2,16 @@
 
 font = font + structure(
     color: structure(
-        primary: "#656269"
-        secondary: "#81afc5"
+        primary: "#656269",
+        secondary: "#81afc5",
         tertiary: "#695375",
         disabled: "rgba(105, 129, 129, 0.4)"
     ),
     family: structure(
         primary: "'Open Sans', sans-serif"
+    ),
+    size: structure(
+        default: "16px"
     ))
 
 background = background + structure(

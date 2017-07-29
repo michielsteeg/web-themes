@@ -29,5 +29,4 @@ border = border + structure(
 # PAGES
 
 container = structure(
-    width: "1140px"
-)
+    width: "1140px")

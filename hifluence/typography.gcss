@@ -7,6 +7,9 @@ h1.title, h1, h2, h3, h4, h5, h6 {
 	text-rendering: optimizeLegibility;
     margin-bottom: 1rem;
 }
+h1.title.alt, h1.alt, h2.alt, h3.alt, h4.alt, h5.alt, h6.alt {
+    color: ${font/color/tertiary};
+}
 h1.title {
     font-size: 3.75rem;
     line-height: 4rem;

@@ -42,3 +42,50 @@ h6, .h6 {
 h1 a, .h1 a, h2 a, .h2 a, h3 a, .h3 a, h4 a, .h4 a, h5 a, .h5 a, h6 a, .h6 a {
   color: inherit;
 }
+
+// Alignment
+.text-left {
+	text-align: left;
+}
+.text-center {
+	text-align: center;
+}
+.text-right {
+	text-align: right;
+}
+
+// Modifiers
+ul.unstyled {
+    & {
+        margin-left: 0;
+    }
+    &, & ul {
+        list-style: none;
+    }
+}
+.monospace {
+   font-family: ${font/family/monospace};
+}
+.upper {
+    text-transform: uppercase;
+}
+.lower {
+    text-transform: lowercase;
+}
+.italic {
+    font-style: italic !important;
+}
+.strong {
+    font-weight: bold !important;
+}
+.normal {
+    font-weight: normal !important;
+}
+.muted {
+    opacity: .55;
+}
+
+.nowrap,
+.nowrap td {
+	white-space: nowrap;
+}

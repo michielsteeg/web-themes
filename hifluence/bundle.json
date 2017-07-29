@@ -4,6 +4,9 @@
 		"variables.glue": {
 			"url": "variables.glue"
 		},
+		"main.gcss": {
+			"url": "main.gcss"
+		},
 		"button.gcss": {
 			"url": "button.gcss"
 		},
@@ -16,8 +19,8 @@
 		"header.gcss": {
 			"url": "header.gcss"
 		},
-		"main.gcss": {
-			"url": "main.gcss"
+		"typography.gcss": {
+			"url": "typography.gcss"
 		}
 	}
 }

@@ -25,6 +25,9 @@ border = border + structure(
     style: "solid",
     width: "1px")
 
+border = border + structure(border,
+    apply: lambda(border/style + " " + border/width + " " + border/color))
+
 
 # PAGES
 

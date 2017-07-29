@@ -16,6 +16,9 @@ font = structure(
 		primary: "'Roboto', 'DejaVu Sans', 'Segoe UI', sans-serif",
 		secondary: "'Libre Baskerville', serif",
 		monospace: "Monospace"
+	),
+	size: structure(
+		default: "16px"
 	))
 	
 link = structure(

@@ -1,4 +1,4 @@
-// COLORS
+# COLORS
 
 font = font + structure(
     color: structure(
@@ -21,7 +21,7 @@ background = background + structure(
     ))
 
 
-// BORDER
+# BORDER
 
 border = border + structure(
     color: "#d1d2dd",
@@ -29,7 +29,7 @@ border = border + structure(
     width: "1px")
 
 
-// PAGES
+# PAGES
 
 container = structure(
     width: "1140px"

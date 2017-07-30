@@ -105,4 +105,8 @@
 		background-color: ${levels/trace/dark};
 		color: ${levels/trace/light};
 	}
+	&[disabled], :disabled {
+		background-color: ${font/color/disabled};
+		color: ${font/color/disabled};
+	}
 }

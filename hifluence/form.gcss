@@ -16,6 +16,53 @@
 	width: 100%;
 }
 
+// radio
+
+// Meat and Potatoes
+.radio_group {
+	display: flex;
+	flex: row nowrap;
+	&.vertical {
+		flex-direction: column;
+		label {
+			margin: 0 0 8px 0;
+		}
+	}
+	label {
+		margin: 0 8px 0 0;
+		cursor: pointer;
+	}
+	input {
+		&[type="radio"] {
+			display: none;
+			&:checked + span {
+				&:before {
+					background-color: ${font/color/secondary};
+					box-shadow: inset white 0 0 0 2px;
+					&.alt {
+						background-color: ${font/color/tertiary};
+					}
+				}
+			}
+		}
+	}
+	span {
+		display: flex;
+		&:before {
+			border: 2px solid ${font/color/secondary};
+			content: '';
+			display: flex;
+			height: 16px;
+			width: 16px;
+			margin: 0 5px;
+			border-radius: 50%;
+			box-sizing: border-box;
+			transition: all ease .200s;
+			box-shadow: inset white 0 0 0 10px;
+		}
+	}
+}
+
 
 // TODO : extract to media lambda
 @media (min-width: 40em) {

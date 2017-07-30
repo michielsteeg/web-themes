@@ -47,6 +47,7 @@
 		}
 	}
 	span {
+		align-items: center;
 		display: flex;
 		&:before {
 			border: 2px solid ${font/color/secondary};

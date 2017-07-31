@@ -109,6 +109,9 @@
 		background: transparent;
 		background-color: transparent;
 		text-decoration: underline;
+		&[disabled], :disabled {
+			background-color: transparent;
+		}
 	}
 	&[disabled], :disabled {
 		background-color: ${font/color/disabled};

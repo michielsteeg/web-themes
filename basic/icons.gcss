@@ -13,7 +13,10 @@ icon = icon + structure(initialize: iconInitialize)
 }
 
 .n-icon-spinner {
+	display: inline-block;
+	height: 24px;
 	position: relative;
+	width: 24px;
 }
 .n-icon-spinner:before {
 	icon/initialize()

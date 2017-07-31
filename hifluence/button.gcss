@@ -108,6 +108,7 @@
 	&.transparent {
 		background: transparent;
 		background-color: transparent;
+		color: ${font/color/secondary};
 		text-decoration: underline;
 		&[disabled], :disabled {
 			background-color: transparent;

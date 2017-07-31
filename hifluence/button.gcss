@@ -105,6 +105,11 @@
 		background-color: ${levels/trace/dark};
 		color: ${levels/trace/light};
 	}
+	&.transparent {
+		background: transparent;
+		background-color: transparent;
+		text-decoration: underline;
+	}
 	&[disabled], :disabled {
 		background-color: ${font/color/disabled};
 		color: ${font/color/disabled};

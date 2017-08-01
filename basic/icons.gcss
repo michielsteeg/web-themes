@@ -12,6 +12,15 @@ icon = icon + structure(initialize: iconInitialize)
 	}
 }
 
+.n-icon {
+	display: inline-block;
+	font: normal normal normal ${icon/size} ${icon/font};
+	font-size: ${icon/size}px;
+	text-rendering: auto;
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
 .n-icon-spinner {
 	display: inline-block;
 	height: 24px;

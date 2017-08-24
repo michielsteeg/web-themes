@@ -5,6 +5,7 @@
 	width: auto;
 	max-width: 100%;
 	.card_section {
+		display: flex;
 		padding: 2rem; // extract to variable
 		&.small {
 			padding: 1rem; // extract to variable

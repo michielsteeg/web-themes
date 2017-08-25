@@ -22,8 +22,13 @@ body {
 	font-family: ${font/family/primary};
 }
 
+.section {
+	margin: 0;
+	width: 100%;
+}
+
 .container {
-	height: 100%;
+	height: auto;
 	margin: 0 auto;
 	padding: 1rem;
 	width: auto;

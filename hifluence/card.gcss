@@ -16,7 +16,7 @@
 		.section {
 			display: flex;
 			flex: 1;
-			flex-flow: row nowrap;
+			flex-flow: column nowrap;
 			&.icon {
 				flex: 0;
 				margin: 0 2rem 0 1rem;

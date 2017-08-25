@@ -1,7 +1,7 @@
 // Headings
 
-h1.title, h1, h2, h3, h4, h5, h6 {
-	font-family: ${font/family/primary};
+h1.title, h1, h1, .h2, h2, .h3, h3, .h4, h4, .h5, h5, .h6 ,h6 {
+	font-family: ${font/family/secondary};
 	font-weight: bold;
 	color: ${font/color/secondary};
 	text-rendering: optimizeLegibility;
@@ -9,6 +9,11 @@ h1.title, h1, h2, h3, h4, h5, h6 {
 }
 h1.title.alt, h1.alt, h2.alt, h3.alt, h4.alt, h5.alt, h6.alt {
     color: ${font/color/tertiary};
+    font-family: ${font/family/alt};
+}
+h1.title.plain, h1.plain, h2.plain, h3.plain, h4.plain, h5.plain, h6.plain {
+    color: inherit;
+    font-family: ${font/family/primary};
 }
 h1.title {
     font-size: 3.75rem;

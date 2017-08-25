@@ -8,7 +8,9 @@ font = font + structure(
         disabled: "rgba(105, 129, 129, 0.4)"
     ),
     family: structure(
-        primary: "'Open Sans', sans-serif"
+        primary: "'Open Sans', sans-serif",
+        secondary: "'Exo 2', sans-serif",
+        alt: "'Pacifico', cursive"
     ))
 
 background = background + structure(

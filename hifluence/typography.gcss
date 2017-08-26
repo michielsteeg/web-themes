@@ -9,6 +9,7 @@ h1.title, h1, h1, .h2, h2, .h3, h3, .h4, h4, .h5, h5, .h6 ,h6 {
 }
 h1.title.alt, h1.alt, h1.alt, .h2.alt, h2.alt, .h3.alt, h3.alt, .h4.alt, h4.alt, .h5.alt, h5.alt, .h6 .alt, h6.alt {
     font-family: ${font/family/alt};
+    font-weight: 400;
 }
 h1.title.purple, h1.purple, h1.purple, .h2.purple, h2.purple, .h3.purple, h3.purple, .h4.purple, h4.purple, .h5.purple, h5.purple, .h6 .purple, h6.purple {
     color: ${font/color/tertiary};

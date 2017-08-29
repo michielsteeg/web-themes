@@ -28,7 +28,7 @@
 		}
 	}
 	.card_section:not(:last-child) {
-		border-bottom: ${border/color};
+		border-bottom: ${border/apply()};
 	}
 	// Small container
 	&.small {

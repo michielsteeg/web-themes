@@ -1,7 +1,8 @@
 .n-form {
 	.n-form-component {
-		display: flex;
-		flex-flow: column nowrap;
+		.n-form-label {
+			display: block;
+		}
 	}
 }
 

@@ -1,6 +1,6 @@
 .card {
 	background-color: ${background/color/primary};
-	border: ${border/color};
+	border: ${border/apply()};
 	margin: 2rem; // extract to variable
 	width: auto;
 	max-width: 100%;

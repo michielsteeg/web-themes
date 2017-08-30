@@ -1,3 +1,8 @@
+.n-form-component {
+	display: flex;
+	flex-flow: column nowrap;
+}
+
 .field {
 	-webkit-appearance: none;
 	-moz-appearance: none;

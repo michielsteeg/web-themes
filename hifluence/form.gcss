@@ -4,7 +4,7 @@
 	-ms-appearance: none;
 	-o-appearance: none;
 	appearance: none;
-	border: ${border/color}; // extract to correct variable
+	border: ${border/apply()};
 	border-radius: 0;
 	background: #fff;
 	color: #614d4d;
@@ -18,7 +18,6 @@
 
 // radio
 
-// Meat and Potatoes
 .radio_group {
 	display: flex;
 	flex: row nowrap;

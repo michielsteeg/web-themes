@@ -113,7 +113,7 @@
 			}
 		}
 		.half {
-			width: calc(50% - 2rem -2px);
+			width: calc(50% - 2rem - 2px);
 		}
 	}
 	.field {

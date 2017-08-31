@@ -9,16 +9,16 @@
 		> * {
 			margin: 0;
 		}
-		.half {
+	}
+	.half {
+		width: 100%;
+	}
+	.full {
+		width: 100%;
+	}
+	.half, .full {
+		.field {
 			width: 100%;
-		}
-		.full {
-			width: 100%;
-		}
-		.half, .full {
-			.field {
-				width: 100%;
-			}
 		}
 	}
 	.vertical_wrapper {

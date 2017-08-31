@@ -1,7 +1,33 @@
+.n-form, .form {
+	.form_section {
+		border-bottom: ${border/apply()};
+		display: flex;
+		flex-flow: row wrap;
+		margin: 1rem 0;
+		padding: 0 0 1rem;
+		width: 100%;
+		> * {
+			margin: 0;
+		}
+		.half {
+			width: 100%;
+		}
+		.full {
+			width: 100%;
+		}
+	}
+	.vertical_wrapper {
+		display: flex;
+		flex-flow: column nowrap;
+	}
+}
+
 .n-form {
 	.n-form-component {
+		margin: 0;
 		.n-form-label {
 			display: block;
+			margin-bottom: 0.5rem;
 		}
 	}
 }
@@ -74,6 +100,17 @@
 
 // TODO : extract to media lambda
 @media (min-width: 40em) {
+	.n-form, .form {
+		.form_section {
+			margin: 1rem;
+			> * {
+				margin: 1rem;
+			}
+		}
+		.half {
+			width: calc(50% - 2rem -2px);
+		}
+	}
 	.field {
 		display: inline-block;
 		width: auto;

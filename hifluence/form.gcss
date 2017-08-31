@@ -38,6 +38,9 @@
 			margin-bottom: 0.5rem;
 		}
 	}
+	input[disabled] {
+		background-color: inherit;
+	}
 }
 
 .field {

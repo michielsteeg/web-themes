@@ -1,13 +1,16 @@
 .n-form, .form {
 	.form_section {
-		border-bottom: ${border/apply()};
+		border-bottom: ${border/dashed/width} ${border/dashed/style} ${border/dashed/color};
 		display: flex;
 		flex-flow: row wrap;
 		margin: 1rem 0;
 		padding: 0 0 1rem;
-		width: 100%;
+		width: auto;
 		> * {
 			margin: 0;
+		}
+		.title {
+			margin-top: 0;
 		}
 	}
 	.half {

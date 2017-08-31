@@ -27,6 +27,14 @@ border = border + structure(
     style: "solid",
     width: "1px")
 
+border = border + structure(
+    dashed: structure(
+        color: "#d9d9d9",
+        style: "dashed",
+        width: "1px"
+    )
+)
+
 border = border + structure(border,
     apply: lambda(border/style + " " + border/width + " " + border/color))
 

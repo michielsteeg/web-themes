@@ -22,6 +22,10 @@ body {
 	font-family: ${font/family/primary};
 }
 
+a {
+	color: ${font/color/secondary};
+}
+
 .section {
 	margin: 0;
 	width: 100%;

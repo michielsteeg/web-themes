@@ -119,6 +119,7 @@
 	&[disabled], :disabled {
 		background-color: ${font/color/disabled};
 		color: ${font/color/disabled};
+		cursor: unset;
 	}
 }
 

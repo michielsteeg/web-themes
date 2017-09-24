@@ -21,6 +21,26 @@
 		},
 		"typography.gcss": {
 			"url": "typography.gcss"
+		},
+		"fonts": {
+			"stylesheet.css": {
+				"url": "fonts/stylesheet.css"
+			},
+			"pacifico.woff": {
+				"url": "fonts/pacifico.woff"
+			},
+			"pacifico.woff2": {
+				"url": "fonts/pacifico.woff2"
+			},
+			"exo2-light.woff": {
+				"url": "fonts/exo2-light.woff"
+			},
+			"exo2-regular.woff": {
+				"url": "fonts/exo2-regular.woff"
+			},
+			"exo2-bold.woff": {
+				"url": "fonts/exo2-bold.woff"
+			}
 		}
 	}
 }

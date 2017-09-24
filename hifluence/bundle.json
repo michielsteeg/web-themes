@@ -23,7 +23,7 @@
 			"url": "typography.gcss"
 		},
 		"fonts": {
-			"stylesheet.css": {
+			"stylessheet.css": {
 				"url": "fonts/stylesheet.css"
 			},
 			"pacifico.woff": {

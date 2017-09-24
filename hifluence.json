@@ -8,6 +8,10 @@
 		"hifluence.json": {
 			"url": "hifluence/bundle.json",
 			"type": "bundle"
+		},
+		"hifluence-fonts.json": {
+			"url": "hifluence/fonts.json",
+			"type": "bundle"
 		}
 	}
 }

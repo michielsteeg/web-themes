@@ -46,6 +46,12 @@
 			line-height: 3rem;
 		}
 	}
+
+	a {
+		color: ${font/color/contrast};
+		text-decoration: none;
+	}
+
 	&.small {
 		font-size: .8333333333rem;
 		line-height: 1.68em;

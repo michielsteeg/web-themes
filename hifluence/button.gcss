@@ -1,6 +1,6 @@
 // BASE
 // Should extract to base theme
-button, .button {
+$button, .button {
 	border: none;
 	box-shadow: none;
 	cursor: pointer;
@@ -17,7 +17,7 @@ button, .button {
 
 
 
-button, .button {
+$button, .button {
 	align-self: flex-start;
 	background-color: ${font/color/secondary};
 	color: ${font/color/contrast};
@@ -85,7 +85,7 @@ button, .button {
 
 // BUTTON COLORS 
 
-button, .button {
+$button, .button {
 	&.alt {
 		background-color: ${font/color/tertiary};
 	}
@@ -133,7 +133,7 @@ button, .button {
 // Media Queries 
 
 @media (min-width: 40em) {
-	button, .button {
+	$button, .button {
 		margin-right: 0.75rem;
 	}
 }

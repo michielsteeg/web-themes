@@ -4,7 +4,7 @@ font = font + structure(
     color: structure(
         primary: "#656269",
         accent: "#167175",
-        secondary: "##154983",
+        secondary: "#154983",
         tertiary: "#E14142",
         disabled: "rgba(105, 129, 129, 0.4)"
     ),

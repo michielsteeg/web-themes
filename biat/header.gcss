@@ -51,16 +51,18 @@
 			flex: 1;
 			height: 3rem;
 			justify-content: center;
+			margin: 0 0.75rem;
 			padding: 0.5rem 1rem;
 			transform: translateY(25%);
+			width: 100%;
+			max-width: calc(100% - 1.5rem);
 			&:not(:last-child) {
-				margin-right: 0.75rem;
+				margin-bottom: 0.75rem;
 			}
 			.icon {
 				display: flex;
 				flex-flow: column nowrap;
 				justify-content: center;
-				margin-right: auto;
 				&:before {
 					font-size: 1.4rem;
 				}
@@ -84,6 +86,13 @@
 	.header {
 		.header_tabs {
 			flex-flow: row nowrap;
+			.tab {
+				margin: 0;
+				&:not(:last-child) {
+					margin-bottom: 0;
+					margin-right: 0.75rem;
+				}
+			}
 		}
 	}
 }

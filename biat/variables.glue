@@ -37,6 +37,12 @@ border = border + structure(border,
     apply: lambda(border/style + " " + border/width + " " + border/color))
 
 
+# SIZING
+
+header = structure(
+    height: "64px")
+
+
 # PAGES
 
 container = structure(

@@ -2,13 +2,13 @@
 .header {
 	color: ${font/color/contrast};
 	background-color: ${font/color/secondary};
-	height: 64px; // extract to variable
+	min-height: ${header/height};
 	width: 100%;
 	.header_content {
 		align-items: center;
 		display: flex;
 		flex-flow: row nowrap;
-		height: 100%;
+		height: ${header/height};
 		margin: 0 auto;
 		max-width: ${container/width};
 		width: auto;
@@ -35,8 +35,55 @@
 			}
 		}
 	}
+	.header_tabs {
+		align-items: center;
+		color: ${font/color/primary};
+		display: flex;
+		flex-flow: column nowrap;
+		margin: 0 auto 2rem;
+		max-width: ${container/width};
+		width: auto;
+		.tab {
+			align-items: stretch;
+			background-color: ${background/color/accent};
+			display: flex;
+			flex-flow: row nowrap;
+			flex: 1;
+			height: 3rem;
+			justify-content: center;
+			padding: 0.5rem 1rem;
+			transform: translateY(25%);
+			&:not(:last-child) {
+				margin-right: 0.75rem;
+			}
+			.icon {
+				display: flex;
+				flex-flow: column nowrap;
+				justify-content: center;
+				margin-right: auto;
+				&:before {
+					font-size: 1.4rem;
+				}
+			}
+			.label {
+				align-items: center;
+				display: flex;
+				flex-flow: row nowrap;
+				flex: 1;
+				justify-content: center;
+			}
+		}
+	}
 }
 
 .header[n-sticky-header] + #main {
-	padding-top: 64px; // extract to variable
+	padding-top: ${header/height};
+}
+
+@media (min-width: 40em) {
+	.header {
+		.header_tabs {
+			flex-flow: row nowrap;
+		}
+	}
 }

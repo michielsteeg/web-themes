@@ -46,6 +46,7 @@
 		.tab {
 			align-items: stretch;
 			background-color: ${background/color/accent};
+			cursor: pointer;
 			display: flex;
 			flex-flow: row nowrap;
 			flex: 1;

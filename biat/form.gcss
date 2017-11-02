@@ -60,6 +60,18 @@
 	width: 100%;
 }
 
+// 'switch' checkbox
+
+.n-form-switch.label_right {
+	align-items: center
+	display: flex;
+	flex-flow: row nowrap;
+	.n-form-label {
+		margin-left: 2rem;
+		order: 1;
+	}
+}
+
 // radio
 
 .radio_group {

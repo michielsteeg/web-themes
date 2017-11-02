@@ -1,0 +1,52 @@
+// PAGE
+
+*, *:before, *:after {
+	box-sizing: border-box;
+}
+
+* {
+	outline: 0;
+	-webkit-overflow-scrolling: touch;
+}
+
+html, body {
+	font-size: ${font/size/default};
+	line-height: calc(${font/size/default} * 1.5);
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: ${background/color/accent};
+	color: ${font/color/primary};
+	font-family: ${font/family/primary};
+}
+
+a {
+	color: ${font/color/secondary};
+}
+
+.section {
+	margin: 0;
+	width: 100%;
+}
+
+.container {
+	height: auto;
+	margin: 0 auto;
+	padding: 1rem;
+	width: auto;
+	max-width: ${container/width}; // extract to optional variable
+	&.small {
+		max-width: calc(${container/width} * 0.8); // can we do something like a ternary? -> max-width: containerWidthSmall ? containerWidthSmall : containerWidth * 0.8
+	}
+}
+
+
+// MEDIA 
+
+.image {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}

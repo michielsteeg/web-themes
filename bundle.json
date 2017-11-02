@@ -16,6 +16,10 @@
 			"type": "bundle",
 			"url": "hifluence.json"
 		},
+		"biat": {
+			"type": "bundle",
+			"url": "biat.json"
+		},
 		"nabu": {
 			"type": "bundle",
 			"url": "nabu.json"

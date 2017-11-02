@@ -1,0 +1,13 @@
+{
+	"name": "biat-theme", 
+	"resources": {
+		"basic.json": {
+			"url": "basic.json",
+			"type": "bundle"
+		},
+		"biat.json": {
+			"url": "biat/bundle.json",
+			"type": "bundle"
+		}
+	}
+}

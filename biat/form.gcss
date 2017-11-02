@@ -1,0 +1,128 @@
+.n-form, .form {
+	.form_section {
+		border-bottom: ${border/dashed/width} ${border/dashed/style} ${border/dashed/color};
+		display: flex;
+		flex-flow: row wrap;
+		margin: 1rem 0;
+		padding: 0 0 1rem;
+		width: auto;
+		> * {
+			margin: 1rem 0;
+		}
+		.title {
+			margin-top: 0;
+		}
+	}
+	.half {
+		width: 100%;
+	}
+	.full {
+		width: 100%;
+	}
+	.half, .full {
+		.field {
+			width: 100%;
+		}
+	}
+	.vertical_wrapper {
+		display: flex;
+		flex-flow: column nowrap;
+	}
+}
+
+.n-form {
+	.n-form-component {
+		.n-form-label {
+			display: block;
+			margin-bottom: 0.5rem;
+		}
+	}
+	input[disabled] {
+		background-color: inherit !important;
+	}
+}
+
+.field {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-ms-appearance: none;
+	-o-appearance: none;
+	appearance: none;
+	border: ${border/apply()};
+	border-radius: 0;
+	background: #fff;
+	color: #614d4d;
+	display: block;
+	font-size: 1rem;
+	line-height: 1.4em;
+	min-height: 3rem;
+	padding: .75rem 1.5rem;
+	width: 100%;
+}
+
+// radio
+
+.radio_group {
+	display: flex;
+	flex: row nowrap;
+	&.vertical {
+		flex-direction: column;
+		label {
+			margin: 0 0 8px 0;
+		}
+	}
+	label {
+		margin: 0 8px 0 0;
+		cursor: pointer;
+	}
+	input {
+		&[type="radio"] {
+			display: none;
+			&:checked + span {
+				&:before {
+					background-color: ${font/color/secondary};
+					box-shadow: inset white 0 0 0 2px;
+					&.alt {
+						background-color: ${font/color/tertiary};
+					}
+				}
+			}
+		}
+	}
+	span {
+		align-items: center;
+		display: flex;
+		&:before {
+			border: 2px solid ${font/color/secondary};
+			content: '';
+			display: flex;
+			height: 16px;
+			width: 16px;
+			margin: 0 5px;
+			border-radius: 50%;
+			box-sizing: border-box;
+			transition: all ease .200s;
+			box-shadow: inset white 0 0 0 10px;
+		}
+	}
+}
+
+
+// TODO : extract to media lambda
+@media (min-width: 40em) {
+	.n-form, .form {
+		.form_section {
+			margin: 1rem;
+			> * {
+				margin: 1rem;
+			}
+		}
+		.half {
+			width: calc(50% - 2rem - 2px);
+		}
+	}
+	.field {
+		display: inline-block;
+		width: auto;
+	}
+}

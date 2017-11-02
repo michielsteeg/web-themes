@@ -1,0 +1,42 @@
+
+.header {
+	color: ${font/color/contrast};
+	background-color: ${font/color/secondary};
+	height: 64px; // extract to variable
+	width: 100%;
+	.header_content {
+		align-items: center;
+		display: flex;
+		flex-flow: row nowrap;
+		height: 100%;
+		margin: 0 auto;
+		max-width: ${container/width};
+		width: auto;
+		.logo {
+		    height: auto;
+		    max-height: calc(100% - 1.5rem);
+		    margin: 0.5rem;
+		}
+		.menu {
+			margin: 0 1rem;
+			margin-left: auto;
+			.menu_links {
+				margin: 0;
+				padding: 0;
+				.link_item {
+					display: inline-block;
+					list-style-type: none;
+					a {
+						color: inherit;
+						text-decoration: none;
+						text-transform: uppercase;
+					}
+				}
+			}
+		}
+	}
+}
+
+.header[n-sticky-header] + #main {
+	padding-top: 64px; // extract to variable
+}

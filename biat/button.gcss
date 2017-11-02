@@ -1,0 +1,139 @@
+// BASE
+// Should extract to base theme
+$button, .button {
+	border: none;
+	box-shadow: none;
+	cursor: pointer;
+	font-size: 1rem;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	i {
+		font-style: normal;
+		font-weight: normal;
+	}
+}
+
+
+
+
+$button, .button {
+	align-self: flex-start;
+	background-color: ${font/color/secondary};
+	color: ${font/color/contrast};
+	font-weight: 700;
+	min-height: 3rem;
+	outline: none;
+	padding: 0.75rem 1.5rem;
+	margin-bottom: 0.75rem;
+	text-transform: uppercase;
+	transition: background .25s ease-out;
+	&.icon_button {
+		padding-left: 3rem;
+	}
+	.n-icon {
+		font-size: 1.35rem;
+		line-height: 3rem;
+		height: auto;
+		margin: 0;
+		position: absolute;
+		left: 0;
+		top: 0;
+		text-align: center;
+		width: 3rem;
+		&:before {
+			font-size: 1.35rem;
+			line-height: 3rem;
+		}
+	}
+
+	a {
+		color: ${font/color/contrast};
+		text-decoration: none;
+	}
+
+	&.small {
+		font-size: .8333333333rem;
+		line-height: 1.68em;
+		padding-top: .025rem;
+		padding-bottom: .025rem;
+		min-height: 1.5rem;
+		&.icon_button {
+			padding-left: 1.95rem;
+		}
+		.n-icon {
+			width: 1.95rem;
+			&:before {
+				font-size: 1rem;
+				line-height: 1.5rem;
+			}
+		}
+	}
+	&.fancy {
+		&.icon_button {
+			padding-left: 4.5rem;
+			&.small {
+				padding-left: 3.25rem;
+			}
+		}
+		.n-icon {
+			box-shadow: inset 0 0 0 3rem rgba(0,0,0,0.15);
+		}
+	}
+}
+
+
+// BUTTON COLORS 
+
+$button, .button {
+	&.alt {
+		background-color: ${font/color/tertiary};
+	}
+	&.success {
+		background-color: ${levels/success/dark};
+		color: ${levels/success/light};
+	}
+	&.info {
+		background-color: ${levels/info/dark};
+		color: ${levels/info/light};
+	}
+	&.error {
+		background-color: ${levels/error/dark};
+		color: ${levels/error/light};
+	}
+	&.critical {
+		background-color: ${levels/critical/dark};
+		color: ${levels/critical/light};
+	}
+	&.warning {
+		background-color: ${levels/warning/dark};
+		color: ${levels/warning/light};
+	}
+	&.trace {
+		background-color: ${levels/trace/dark};
+		color: ${levels/trace/light};
+	}
+	&.transparent {
+		background: transparent;
+		background-color: transparent;
+		color: ${font/color/secondary};
+		text-decoration: underline;
+		&[disabled], :disabled {
+			background-color: transparent;
+		}
+	}
+	&[disabled], :disabled {
+		background-color: ${font/color/disabled};
+		color: ${font/color/disabled};
+		cursor: unset;
+	}
+}
+
+
+// Media Queries 
+
+@media (min-width: 40em) {
+	$button, .button {
+		margin-right: 0.75rem;
+	}
+}

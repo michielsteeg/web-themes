@@ -64,9 +64,10 @@
 
 .n-form-switch.label_right {
 	align-items: center
-	display: flex;
+	display: flex !important;
 	flex-flow: row nowrap;
 	.n-form-label {
+		margin: 0;
 		margin-left: 2rem;
 		order: 1;
 	}

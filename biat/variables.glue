@@ -3,21 +3,21 @@
 font = font + structure(
     color: structure(
         primary: "#656269",
-        accent: "#035374",
-        secondary: "#81afc5",
-        tertiary: "#695375",
+        accent: "#167175",
+        secondary: "##154983",
+        tertiary: "#E14142",
         disabled: "rgba(105, 129, 129, 0.4)"
     ),
     family: structure(
-        primary: "'Open Sans', sans-serif",
+        primary: "'Arial', 'Open Sans', sans-serif",
         secondary: "'Exo 2', sans-serif",
         alt: "'Pacifico', cursive"
     ))
 
 background = background + structure(
     color: structure(
-        primary: "#fff",
-        accent: "#f1f2f4"
+        primary: "#f2f2f2",
+        accent: "#fff"
     ))
 
 

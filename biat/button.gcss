@@ -21,10 +21,9 @@ $button, .button {
 	align-self: flex-start;
 	background-color: ${font/color/secondary};
 	color: ${font/color/contrast};
-	font-weight: 700;
-	min-height: 3rem;
-	outline: none;
-	padding: 0.75rem 1.5rem;
+	font-weight: 400;
+	min-height: 2.5rem;
+	padding: 0.5rem 1.25rem;
 	margin-bottom: 0.75rem;
 	transition: background .25s ease-out;
 	&.icon_button {
@@ -120,6 +119,11 @@ $button, .button {
 		&[disabled], :disabled {
 			background-color: transparent;
 		}
+	}
+	&.outline {
+		border: 1px solid ${font/color/secondary};
+		background: transparent;
+		color: ${font/color/secondary};
 	}
 	&[disabled], :disabled {
 		background-color: ${font/color/disabled};

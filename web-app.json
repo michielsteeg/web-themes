@@ -1,0 +1,13 @@
+{
+	"name": "web-app-theme", 
+	"resources": {
+		"basic.json": {
+			"url": "basic.json",
+			"type": "bundle"
+		},
+		"web-app.json": {
+			"url": "web-app/theme.json",
+			"type": "bundle"
+		}
+	}
+}

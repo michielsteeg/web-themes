@@ -1,0 +1,36 @@
+# SHADOWS
+
+.shadow-hover {
+	transition: ${shadow/transition};
+}
+
+.shadow-hover-2 {
+	transition: ${shadow/transition};
+	&:hover {
+		box-shadow: ${shadow/two};
+	}
+}
+
+.shadow-0 {
+	box-shadow: ${shadow/zero};
+}
+
+.shadow-1 {
+	box-shadow: ${shadow/one};
+}
+
+.shadow-2 {
+	box-shadow: ${shadow/two};
+}
+
+.shadow-3 {
+	box-shadow: ${shadow/three};
+}
+
+.shadow-4 {
+	box-shadow: ${shadow/four};
+}
+
+.shadow-5 {
+	box-shadow: ${shadow/five};
+}

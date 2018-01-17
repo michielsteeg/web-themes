@@ -1,0 +1,41 @@
+// MEDIA 
+
+.image {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+// PROMPT
+
+.n-prompt .n-prompt-container {
+	background-color: ${background/color/primary};
+	border-radius: ${border/radius};
+	box-shadow: ${shadow/three};
+	min-height: 9rem;
+	.actions {
+		text-align: right;
+		a {
+			padding: 0 1.25rem;
+		}
+	}
+}
+
+
+// PAGING
+
+.n-paging {
+	button[disabled] {
+		border: ${border/apply()};
+	}
+}
+
+
+// INSTRUCTIONS 
+
+.instructions {
+	margin: 2rem auto;
+	text-align: center;
+	max-width: 40em;
+}

@@ -1,6 +1,9 @@
 {
 	"name": "web-app", 
 	"resources": {
+		"variables.glue": {
+			"url": "variables.glue"
+		},
 		"shadow.gcss": {
 			"url": "shadow.gcss"
 		},

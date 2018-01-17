@@ -5,7 +5,7 @@
 	box-shadow: ${shadow/one};
 	min-height: ${header/height};
 	width: 100%;
-	.header_content {
+	.header-content {
 		align-items: center;
 		display: flex;
 		flex-flow: row nowrap;
@@ -23,7 +23,7 @@
 		.menu {
 			margin: 0 1rem;
 			margin-left: auto;
-			.menu_links {
+			.menu-links {
 				display: inline-block;
 				margin: 0;
 				padding: 0;
@@ -40,7 +40,7 @@
 					text-decoration: bold;
 					text-transform: uppercase;
 				}
-				.link_item {
+				.link-item {
 					display: inline-block;
 					font-size: 0.9rem;
 					list-style-type: none;

@@ -1,3 +1,113 @@
+// LIST
+
+// TODO: all button.primary in table list should be 'action's
+.table-list {
+    display: flex;
+    flex-flow: column nowrap;
+    margin: 2rem 0 0;
+    padding; 0;
+    .row {
+        align-items: center;
+        display: flex;
+        flex-flow: row nowrap;
+        list-style-type: none;
+        > * {
+            flex: 1;
+            flex-basis: 0;
+        }
+        &.heading {
+            margin: 1rem;
+            > span {
+                color: ${font/color/accent};
+                font-size: 0.9rem;
+                letter-spacing: 1px;
+                text-transform: uppercase;
+            }
+        }
+        &:not(.heading) {
+            background-color: ${background/color/primary};
+            border: ${border/apply()};
+            border-color: ${border/soft/color};
+            border-radius: ${border/radius};
+            cursor: pointer;
+            margin-bottom: 0.125rem;
+            padding: 0.5rem 1rem;
+            transition: ${shadow/transition};
+            &:hover {
+                border-color: ${border/color};
+                box-shadow: ${shadow/zero};
+            }
+            &.active {
+                box-shadow: ${shadow/one};
+                border: 1px solid rgba(0, 178, 137, 0.6); // opacity version of font/color/secondary
+            }
+            &.disabled {
+                opacity: 0.7;
+            }
+            $button, .button {
+                margin: 0;
+            }
+        }
+        .action, .actions {
+            flex-grow: 0;
+            flex-basis: auto;
+        }
+    }
+}
+
+// ACTION 
+
+$button.action {
+	background-color: transparent;
+	box-shadow: none;
+	color: ${font/color/tertiary};
+	display: inline-block;
+	font-size: 14px;
+	line-height: 1.5rem;
+	height: 1.5rem;
+	min-height: auto;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	text-align: center;
+	transition: all 0.1s ease-out;
+	vertical-align: middle;
+	width: 2rem;
+	&:before {
+		font-size: 2em;
+		line-height: 1.5rem;
+	}
+	.badge {
+		background-color: ${background/color/tertiary};
+		border-radius: 50%;
+		color: ${font/color/accentTertiary};
+		display: block;
+		font-size: 0.6rem;
+		height: 1.1rem;
+		line-height: 1.1rem;
+		padding: 0.0625rem 0.125rem;
+		position: absolute;
+		right: 0;
+		top: 0;
+		text-align: center;
+		z-index: 100;
+	}
+	.n-icon {
+		font-size: 0.7em;
+		line-height: 1rem;
+		width: 2rem;
+		&:before {
+			font-size: 2em;
+			line-height: 1.5rem;
+		}
+	}
+	&:hover {
+		box-shadow: none !important;
+		color: ${font/color/secondary};
+	}
+}
+
+
 // MEDIA 
 
 .image {
@@ -13,13 +123,17 @@
 	background-color: ${background/color/primary};
 	border-radius: ${border/radius};
 	box-shadow: ${shadow/three};
-	min-height: 9rem;
+    min-height: 9rem;
+    overflow: visible;
 	.actions {
 		text-align: right;
 		a {
 			padding: 0 1.25rem;
 		}
 	}
+}
+.n-confirm {
+	box-shadow: none;
 }
 
 

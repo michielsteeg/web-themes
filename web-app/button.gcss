@@ -14,58 +14,6 @@ $button, .button {
 	}
 }
 
-
-$button.only-icon, .button.only-icon {
-	background-color: transparent;
-	box-shadow: none;
-	color: ${font/color/tertiary};
-	display: inline-block;
-	font-size: 14px;
-	line-height: 1.5rem;
-	height: 1.5rem;
-	min-height: auto;
-	margin: 0;
-	padding: 0;
-	position: relative;
-	text-align: center;
-	transition: all 0.1s ease-out;
-	vertical-align: middle;
-	width: 2rem;
-	&:before {
-		font-size: 2em;
-		line-height: 1.5rem;
-	}
-	.badge {
-		background-color: ${background/color/tertiary};
-		border-radius: 50%;
-		color: ${font/color/accentTertiary};
-		display: block;
-		font-size: 0.6rem;
-		height: 1.1rem;
-		line-height: 1.1rem;
-		padding: 0.0625rem 0.125rem;
-		position: absolute;
-		right: 0;
-		top: 0;
-		text-align: center;
-		z-index: 100;
-	}
-	.n-icon {
-		font-size: 0.7em;
-		line-height: 1rem;
-		width: 2rem;
-		&:before {
-			font-size: 2em;
-			line-height: 1.5rem;
-		}
-	}
-	&:hover {
-		box-shadow: none !important;
-		color: ${font/color/secondary};
-	}
-}
-
-
 $button, .button {
 	align-self: flex-start;
 	background-color: ${font/color/secondary};
@@ -83,7 +31,7 @@ $button, .button {
 	&:hover:not(:disabled) {
 		box-shadow: ${shadow/one}, inset 0 0 1000px rgba(255,255,255, 0.1);
 	}
-	&.with-icon {
+	&.has-icon {
 		padding-left: 2.5rem;
 	}
 	.n-icon {
@@ -113,7 +61,7 @@ $button, .button {
 		padding-top: .025rem;
 		padding-bottom: .025rem;
 		min-height: 1.5rem;
-		&.with-icon {
+		&.has-icon {
 			padding-left: 1.95rem;
 		}
 		.n-icon {
@@ -125,7 +73,7 @@ $button, .button {
 		}
 	}
 	&.fancy {
-		&.with-icon {
+		&.has-icon {
 			padding-left: 4.5rem;
 			&.small {
 				padding-left: 3.25rem;
@@ -136,7 +84,7 @@ $button, .button {
 		}
 	}
 	
-	&.with-icon.with-icon_right {
+	&.has-icon.has-icon-right {
 		padding-right: 2.5rem;
 		padding-left: 1.25rem;
 		&.small {
@@ -159,58 +107,58 @@ $button, .button {
 // BUTTON COLORS 
 
 $button, .button {
-	&.alt {
+	&.primary {
+		&.ghost {
+			border-color: ${font/color/secondary};
+			color: ${font/color/secondary};
+		}
+	}
+	&.secondary {
 		background-color: ${font/color/tertiary};
+		&.ghost {
+			border-color: ${font/color/tertiary};
+			color: ${font/color/tertiary};
+		}
 	}
 	&.info {
 		background-color: ${levels/info/dark};
 		color: ${levels/info/light};
-		&.only-icon {
+		&.ghost {
+			border-color: ${levels/info/dark};
 			color: ${levels/info/dark};
-			background-color: transparent;
 		}
 	}
 	&.success {
 		background-color: ${levels/success/dark};
 		color: ${levels/success/light};
+		&.ghost {
+			border-color: ${levels/success/dark};
+			color: ${levels/success/dark};
+		}
 	}
-	&.error {
+	&.danger {
 		background-color: ${levels/error/dark};
 		color: ${levels/error/light};
-	}
-	&.critical {
-		background-color: ${levels/critical/dark};
-		color: ${levels/critical/light};
+		&.ghost {
+			border-color: ${levels/danger/dark};
+			color: ${levels/danger/dark};
+		}
 	}
 	&.warning {
 		background-color: ${levels/warning/dark};
 		color: ${levels/warning/light};
+		&.ghost {
+			border-color: ${levels/warning/dark};
+			color: ${levels/warning/dark};
+		}
 	}
-	&.trace {
-		background-color: ${levels/trace/dark};
-		color: ${levels/trace/light};
-	}
-	&.transparent {
+	&.ghost {
 		background: transparent;
 		background-color: transparent;
-		color: ${font/color/secondary};
-		text-decoration: underline;
-		&[disabled], :disabled, .disabled {
-			background-color: transparent;
-		}
-	}
-	&.outline {
-		border: 1px solid ${font/color/secondary};
-		background: transparent;
-		color: ${font/color/secondary};
 	}
 	&[disabled], :disabled, .disabled {
-		background-color: ${font/color/disabled};
-		color: ${font/color/disabled};
-		cursor: unset;
-		&.only-icon {
-			background-color: transparent;
-		}
+		cursor: not-allowed;
+		opacity: 0.25;
 	}
 }
 

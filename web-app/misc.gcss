@@ -69,7 +69,7 @@
             flex: 1;
             flex-basis: 0;
         }
-        &.heading {
+        &.title {
             margin: 1rem;
             > span {
                 color: ${font/color/accent};
@@ -78,7 +78,7 @@
                 text-transform: uppercase;
             }
         }
-        &:not(.heading) {
+        &:not(.title) {
             background-color: ${background/color/primary};
             border: ${border/apply()};
             border-color: ${border/soft/color};

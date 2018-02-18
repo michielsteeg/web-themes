@@ -128,8 +128,8 @@ $button.action {
 	vertical-align: middle;
 	width: 2rem;
 	&:before {
-		font-size: 2em;
-		line-height: 1.5rem;
+		font-size: 1.6em;
+		line-height: 1.6em;
 	}
 	.badge {
 		background-color: ${background/color/tertiary};

@@ -1,0 +1,242 @@
+.n-form, .form {
+	input, select, textarea {
+		border-radius: ${border/radius}; // remove from original file
+	}
+	.form_section {
+		border-bottom: ${border/dashed/width} ${border/dashed/style} ${border/dashed/color};
+		display: flex;
+		flex-flow: row wrap;
+		margin: 1rem 0;
+		padding: 0 0 1rem;
+		width: auto;
+		> * {
+			margin: 1rem 0;
+		}
+		.title {
+			margin-top: 0;
+		}
+	}
+	.half {
+		width: 100%;
+	}
+	.full {
+		width: 100%;
+	}
+	.half, .full {
+		.field {
+			width: 100%;
+		}
+	}
+	.vertical_wrapper {
+		display: flex;
+		flex-flow: column nowrap;
+	}
+}
+
+$body, .n-form {
+	.n-form-content {
+		padding: 1rem 2rem;
+	}
+	.n-form-section {
+		&.section-row {
+			display: flex;
+			flex-flow: row wrap;
+			justify-content: space-between;
+		}
+	}
+	.n-form-component {
+		.n-form-label {
+			display: block;
+			margin-bottom: 0; // not necessary
+		}
+	}
+	.n-form-combo {
+		.n-input-combo {
+			margin: 0;
+			.n-input-combo-input-container {
+				flex-basis: auto;
+				width: 100%;
+			}
+		}
+	}
+	input[disabled] {
+		background-color: inherit !important;
+	}
+}
+	
+.n-form {
+	footer {
+		margin: 1rem 0 0.5rem;
+		$button, .button {
+			margin-bottom: 0;
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+	
+	&.layout2 {
+		.n-form-content {
+			.n-form-component {
+				.n-form-label {
+					color: ${font/color/accent};
+					text-transform: uppercase;
+				}
+				&.n-form-text {
+					$input, textarea {
+						width: 100%;
+					}
+					&.n-form-date-input {
+						input {
+							width: calc(100% - 3rem);
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.field {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-ms-appearance: none;
+	-o-appearance: none;
+	appearance: none;
+	border: ${border/apply()};
+	border-radius: ${border/radius};
+	background: #fff;
+	color: #614d4d;
+	display: block;
+	font-size: 1rem;
+	line-height: 1.4em;
+	min-height: 3rem;
+	padding: .75rem 1.25rem;
+	width: 100%;
+}
+
+.field, input, select, textarea {
+	&::placeholder {
+		color: ${font/color/accent};
+		opacity: 0.7;
+	}
+}
+
+// 'date' component
+
+.n-form-date {
+	.n-form-date-icon {
+		background-color: transparent;
+		color: ${font/color/tertiary};
+		border-radius: 0 ${border/radius} ${border/radius} 0;
+		line-height: 2.8rem;
+		margin-left: -1px;
+	}
+	.n-input-date {
+		border-style: none solid solid solid;
+		border-radius: ${border/radius};
+		box-shadow: ${shadow/three};
+		top: calc(100% - 0.55rem);
+		transition: ${shadow/transition};
+		max-width: none;
+		caption {
+			.month {
+				font-weight: 400;
+			}
+			.n-icon:before {
+				vertical-align: middle;
+			}
+		}
+		a {
+			text-decoration: none;
+		}
+	}
+}
+
+// 'switch' checkbox
+
+.n-form-switch.label-right {
+	align-items: center
+	display: flex !important;
+	flex-flow: row nowrap;
+	margin: 0;
+	.n-form-label {
+		font-size: 0.9rem;
+		margin: 0;
+		margin-left: 2rem;
+		order: 1;
+	}
+	.n-form-checkbox-content {
+		padding-left: 0;
+	}
+}
+
+// radio
+
+.radio_group {
+	display: flex;
+	flex: row nowrap;
+	&.vertical {
+		flex-direction: column;
+		label {
+			margin: 0 0 8px 0;
+		}
+	}
+	label {
+		margin: 0 8px 0 0;
+		cursor: pointer;
+	}
+	input {
+		&[type="radio"] {
+			display: none;
+			&:checked + span {
+				&:before {
+					background-color: ${font/color/secondary};
+					box-shadow: inset white 0 0 0 2px;
+					&.alt {
+						background-color: ${font/color/tertiary};
+					}
+				}
+			}
+		}
+	}
+	span {
+		align-items: center;
+		display: flex;
+		&:before {
+			border: 2px solid ${font/color/secondary};
+			content: '';
+			display: flex;
+			height: 16px;
+			width: 16px;
+			margin: 0 5px;
+			border-radius: 50%;
+			box-sizing: border-box;
+			transition: all ease .200s;
+			box-shadow: inset white 0 0 0 10px;
+		}
+	}
+}
+
+
+// TODO : extract to media lambda
+@media (min-width: 40em) {
+	.n-form, .form {
+		.form_section {
+			margin: 1rem;
+			> * {
+				margin: 1rem;
+			}
+		}
+		.half {
+			width: calc(50% - 2rem - 2px);
+		}
+		&.layout2 .n-form-component.half {
+			width: calc(50% - 2rem - 2px);
+		}
+	}
+	.field, .n-form .field {
+		display: inline-block;
+		width: auto;
+	}
+}

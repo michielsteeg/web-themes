@@ -1,0 +1,59 @@
+[route="login"], [route="forgot"], [route="reset"], [route="initialize"] {
+	background-color: ${background/color/primary};
+	min-height: 100%;
+	align-items: center;
+	display: flex;
+	flex: 1;
+	flex-flow: row nowrap;
+	height: 100vh;
+	justify-content: center;
+	.nabu-cms {
+		background-color: #fff;
+		border: ${border/apply()};
+		margin: 1rem; // extract to variable
+		padding: 1rem;
+		min-width: 30rem;
+		width: calc(100% - 2rem);
+		max-width: 600px;
+		background-color: #fafafa;
+		.n-form-content .n-form-section {
+			display: flex;
+			flex-flow: column nowrap;
+			.n-form-component {
+				margin-bottom: 1rem;
+				.field {
+					width: 100%;
+				}
+				&.n-form-checkbox {
+					align-items: center;
+					display: flex;
+					flex-flow: row nowrap;
+					margin: 0 0 1rem;
+					.n-form-label {
+						margin-right: 1rem;
+					}
+				}
+			}
+		}
+		footer {
+			.actions {
+				display: flex;
+				flex-flow: row nowrap;
+                justify-content: flex-end;
+                button {
+                    margin-right: 0;
+                }
+			}
+		}
+	}
+}
+
+@media (min-width: 40em) {
+	[route="login"], [route="forgot"], [route="reset"], [route="initialize"] {
+		.nabu-cms {
+			margin: 2rem;
+			padding: 2rem;
+			width: calc(100% - 4rem);
+		}
+	}
+}

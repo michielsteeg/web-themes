@@ -1,0 +1,125 @@
+# COLORS
+
+# TEMP
+
+# #00b289 - title green / accent: #01b98d
+# #353736 - dark bg color
+# border colors : light : #ecf0f1 / dark : #d8d8d8
+
+
+# ultra violet: #32296b
+# Teal: #83b5b1
+# geel: #f2f454
+# roos: #e56da8
+# warm grijs: #c4c5bf
+
+font = font + structure(
+    color: structure(
+        primary: "#777",
+        accent: "#878787",
+        secondary: "#32296b",
+        tertiary: "#425662",
+        accentTertiary: "#f2f2f2",
+        disabled: "rgba(105, 129, 129, 0.4)"
+    ),
+    family: structure(
+        primary: "'Open Sans', sans-serif",
+        secondary: "'Open Sans', sans-serif",
+        alt: "'Open Sans', sans-serif"
+    ))
+
+background = background + structure(
+    color: structure(
+        primary: "#fff",
+        accent: "#dadbd7",
+        accentSecondary: "#fcfdfd",
+        secondary: "#83b5b1",
+        tertiary: "#32296b",
+        accentTertiary: "#ebecea",
+        contrast: "#e56da8"
+    ))
+    
+    # TODO : accentTertiary / contrast
+
+
+# BORDER
+
+border = border + structure(
+    color: "#d8d8d8",
+    style: "solid",
+    width: "1px",
+    radius: "2px",
+    soft: structure(
+    	color: "#ecf0f1",
+    	style: "solid",
+    	width: "1px"
+    ),
+    dashed: structure(
+        color: "#d9d9d9",
+        style: "dashed",
+        width: "1px"
+    ))
+
+border = border + structure(border,
+    apply: lambda(border/style + " " + border/width + " " + border/color))
+    
+
+# LEVELS
+
+levels = levels + structure(
+	success: structure(
+		dark: "#01b98d",
+		light: "#fff"
+	),
+	info: structure(
+		dark: "#4b8ae8",
+		light: "#fff",
+		darkAccent: "#295aa3"
+	),
+	error: structure(
+		dark: "#E06666", 
+		light: "#fff"
+	))
+	
+# PRIORITY 
+
+priority = structure(
+	low: structure(
+		dark: "#32296b",
+		light: "#fff"
+	),
+	medium: structure(
+		dark: "#83b5b1",
+		light: "#fff"
+	),
+	high: structure(
+		dark: "#f2f454",
+		light: "#fff"
+	),
+	critical: structure(
+		dark: "#e56da8",
+		light: "#fff"
+	))
+	
+# SHADOWS 
+
+shadow = structure(
+	transition: "box-shadow 0.3s cubic-bezier(.25,.8,.25,1)",
+	zero: "0 1px 3px rgba(0,0,0,0.03), 0 1px 2px rgba(0,0,0,0.06)",
+	one: "0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24)",
+	two: "0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23)",
+	three: "0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23)",
+	four: "0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22)",
+	five: "0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22)")
+
+
+# SIZING
+
+header = structure(
+    height: "64px")
+
+
+# PAGES
+
+container = structure(
+    width: "1140px")

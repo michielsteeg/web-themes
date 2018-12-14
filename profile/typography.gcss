@@ -1,0 +1,95 @@
+// Headings
+
+h1.title, h1, h1, .h2, h2, .h3, h3, .h4, h4, .h5, h5, .h6 ,h6 {
+	font-family: ${font/family/secondary};
+	font-weight: 400;
+	color: ${font/color/secondary};
+	text-rendering: optimizeLegibility;
+    margin-bottom: 1rem;
+}
+h1.title.light, h1.light, h1.light, .h2.light, h2.light, .h3.light, h3.light, .h4.light, h4.light, .h5.light, h5.light, .h6 .light, h6.light {
+    font-weight: 300;
+}
+h1.title.plain, h1.plain, h2.plain, h3.plain, h4.plain, h5.plain, h6.plain {
+    color: ${font/color/tertiary};
+    font-family: ${font/family/primary};
+}
+//h1.title {
+//    font-size: 3.75rem;
+//    line-height: 4rem;
+//    margin-bottom: 0.5rem;
+//}
+h1, .h1 {
+    font-size: 3rem;
+    line-height: 3.25rem;
+}
+h2, .h2 {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+}
+h3, .h3 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+h4, .h4 {
+    font-size: 1.3125rem;
+    line-height: 2rem;
+}
+h5, .h5 {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+}
+h6, .h6 {
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+h1 a, .h1 a, h2 a, .h2 a, h3 a, .h3 a, h4 a, .h4 a, h5 a, .h5 a, h6 a, .h6 a {
+  color: inherit;
+}
+
+// Alignment
+.text-left {
+	text-align: left;
+}
+.text-center {
+	text-align: center;
+}
+.text-right {
+	text-align: right;
+}
+
+// Modifiers
+ul.unstyled {
+    & {
+        margin-left: 0;
+    }
+    &, & ul {
+        list-style: none;
+    }
+}
+.monospace {
+   font-family: ${font/family/monospace};
+}
+.upper {
+    text-transform: uppercase;
+}
+.lower {
+    text-transform: lowercase;
+}
+.italic {
+    font-style: italic !important;
+}
+.strong {
+    font-weight: bold !important;
+}
+.normal {
+    font-weight: normal !important;
+}
+.muted {
+    opacity: .55;
+}
+
+.nowrap,
+.nowrap td {
+	white-space: nowrap;
+}

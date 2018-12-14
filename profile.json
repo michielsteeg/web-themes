@@ -1,0 +1,13 @@
+{
+	"name": "profile-theme", 
+	"resources": {
+		"basic.json": {
+			"url": "basic.json",
+			"type": "bundle"
+		},
+		"profile.json": {
+			"url": "profile/theme.json",
+			"type": "bundle"
+		}
+	}
+}

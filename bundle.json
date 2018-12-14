@@ -24,5 +24,10 @@
 			"type": "bundle",
 			"url": "nabu.json"
 		}
+		},
+		"profile": {
+			"type": "bundle",
+			"url": "profile.json"
+		}
 	}
 }

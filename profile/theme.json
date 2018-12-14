@@ -1,0 +1,148 @@
+{
+	"name": "web-app", 
+	"resources": {
+		"variables.glue": {
+			"url": "variables.glue"
+		},
+		"shadow.gcss": {
+			"url": "shadow.gcss"
+		},
+		"main.gcss": {
+			"url": "main.gcss"
+		},
+		"misc.gcss": {
+			"url": "misc.gcss"
+		},
+		"auth.gcss": {
+			"url": "auth.gcss"
+		},
+		"button.gcss": {
+			"url": "button.gcss"
+		},
+		"card.gcss": {
+			"url": "card.gcss"
+		},
+		"form.gcss": {
+			"url": "form.gcss"
+		},
+		"header.gcss": {
+			"url": "header.gcss"
+		},
+		"typography.gcss": {
+			"url": "typography.gcss"
+		},
+		"fonts": {
+			"stylesheet.css": {
+				"url": "fonts/stylesheet.css"
+			},
+			"montserrat-blackitalic-webfont.woff": {
+				"url": "fonts/montserrat-blackitalic-webfont.woff"
+			},
+			"montserrat-lightitalic-webfont.woff": {
+				"url": "fonts/montserrat-lightitalic-webfont.woff"
+			},
+			"montserrat-blackitalic-webfont.woff2": {
+				"url": "fonts/montserrat-blackitalic-webfont.woff2"
+			},
+			"montserrat-lightitalic-webfont.woff2": {
+				"url": "fonts/montserrat-lightitalic-webfont.woff2"
+			},
+			"montserrat-black-webfont.woff": {
+				"url": "fonts/montserrat-black-webfont.woff"
+			},
+			"montserrat-light-webfont.woff": {
+				"url": "fonts/montserrat-light-webfont.woff"
+			},
+			"montserrat-black-webfont.woff2": {
+				"url": "fonts/montserrat-black-webfont.woff2"
+			},
+			"montserrat-light-webfont.woff2": {
+				"url": "fonts/montserrat-light-webfont.woff2"
+			},
+			"montserrat-bolditalic-webfont.woff": {
+				"url": "fonts/montserrat-bolditalic-webfont.woff"
+			},
+			"montserrat-mediumitalic-webfont.woff": {
+				"url": "fonts/montserrat-mediumitalic-webfont.woff"
+			},
+			"montserrat-bolditalic-webfont.woff2": {
+				"url": "fonts/montserrat-bolditalic-webfont.woff2"
+			},
+			"montserrat-mediumitalic-webfont.woff2": {
+				"url": "fonts/montserrat-mediumitalic-webfont.woff2"
+			},
+			"montserrat-bold-webfont.woff": {
+				"url": "fonts/montserrat-bold-webfont.woff"
+			},
+			"montserrat-medium-webfont.woff": {
+				"url": "fonts/montserrat-medium-webfont.woff"
+			},
+			"montserrat-bold-webfont.woff2": {
+				"url": "fonts/montserrat-bold-webfont.woff2"
+			},
+			"montserrat-medium-webfont.woff2": {
+				"url": "fonts/montserrat-medium-webfont.woff2"
+			},
+			"montserrat-extrabolditalic-webfont.woff": {
+				"url": "fonts/montserrat-extrabolditalic-webfont.woff"
+			},
+			"montserrat-regular-webfont.woff": {
+				"url": "fonts/montserrat-regular-webfont.woff"
+			},
+			"montserrat-extrabolditalic-webfont.woff2": {
+				"url": "fonts/montserrat-extrabolditalic-webfont.woff2"
+			},
+			"montserrat-regular-webfont.woff2": {
+				"url": "fonts/montserrat-regular-webfont.woff2"
+			},
+			"montserrat-extrabold-webfont.woff": {
+				"url": "fonts/montserrat-extrabold-webfont.woff"
+			},
+			"montserrat-semibolditalic-webfont.woff": {
+				"url": "fonts/montserrat-semibolditalic-webfont.woff"
+			},
+			"montserrat-extrabold-webfont.woff2": {
+				"url": "fonts/montserrat-extrabold-webfont.woff2"
+			},
+			"montserrat-semibolditalic-webfont.woff2": {
+				"url": "fonts/montserrat-semibolditalic-webfont.woff2"
+			},
+			"montserrat-extralightitalic-webfont.woff": {
+				"url": "fonts/montserrat-extralightitalic-webfont.woff"
+			},
+			"montserrat-semibold-webfont.woff": {
+				"url": "fonts/montserrat-semibold-webfont.woff"
+			},
+			"montserrat-extralightitalic-webfont.woff2": {
+				"url": "fonts/montserrat-extralightitalic-webfont.woff2"
+			},
+			"montserrat-semibold-webfont.woff2": {
+				"url": "fonts/montserrat-semibold-webfont.woff2"
+			},
+			"montserrat-extralight-webfont.woff": {
+				"url": "fonts/montserrat-extralight-webfont.woff"
+			},
+			"montserrat-thinitalic-webfont.woff": {
+				"url": "fonts/montserrat-thinitalic-webfont.woff"
+			},
+			"montserrat-extralight-webfont.woff2": {
+				"url": "fonts/montserrat-extralight-webfont.woff2"
+			},
+			"montserrat-thinitalic-webfont.woff2": {
+				"url": "fonts/montserrat-thinitalic-webfont.woff2"
+			},
+			"montserrat-italic-webfont.woff": {
+				"url": "fonts/montserrat-italic-webfont.woff"
+			},
+			"montserrat-thin-webfont.woff": {
+				"url": "fonts/montserrat-thin-webfont.woff"
+			},
+			"montserrat-italic-webfont.woff2": {
+				"url": "fonts/montserrat-italic-webfont.woff2"
+			},
+			"montserrat-thin-webfont.woff2": {
+				"url": "fonts/montserrat-thin-webfont.woff2"
+			}
+		}
+	}
+}

@@ -95,6 +95,15 @@ $body, .n-form {
 			}
 		}
 	}
+
+	&.profile {
+		.n-form-content {
+			display: block;
+			.n-form-component.half {
+				width: calc(50% - 3px);
+			}
+		}
+	}
 }
 
 .field {
